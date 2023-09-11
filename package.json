@@ -1,0 +1,23 @@
+{
+  "name": "root",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "npm": ">=8.19.2",
+    "node": ">=18.11.0"
+  },
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "frontend": "npm -w web-dmm-frontend run start"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "//": "NOTE: Workspaces listed in dependency order; intentionally not alphabetical!",
+  "workspaces": [
+    "packages/web-dmm-frontend"
+  ],
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0"
+  }
+}
